@@ -1,0 +1,14 @@
+{
+  "name": "ai-image-scale-root",
+  "private": true,
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "scripts": {
+    "install:all": "npm install",
+    "start:client": "npm run dev --workspace=ai-image-scale-client",
+    "start:server": "npm run start --workspace=ai-image-scale-server",
+    "dev": "echo 'Run start:server and start:client in separate terminals'"
+  }
+}
