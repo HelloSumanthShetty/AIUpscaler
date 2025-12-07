@@ -94,7 +94,6 @@ Upload → Validate → Preview → Select Scale → Process (AI) → Compare �
 
 **Modern JavaScript Everywhere**
 - Single language (JavaScript/JSX) across frontend and backend reduces context switching
-- Easier team collaboration and code sharing
 
 **Performance First**
 - Vite's instant HMR improves developer experience
@@ -329,7 +328,6 @@ npm run dev
 - **Initial Setup & Architecture** (3 hours)
   - Project scaffolding with Vite
   - Backend Express setup
-  - Database schema design
   
 - **Core Features Implementation** (8 hours)
   - File upload with drag-and-drop
@@ -366,53 +364,48 @@ npm run dev
    - Prevent property mismatch issues
    - Better developer experience with autocomplete
 
-2. **Database Integration**
-   - Add MongoDB for persistent user data
-   - Store upload history on server for cross-device sync
-   - Better analytics and usage tracking
-
-3. **Image Processing Queue**
+2. **Image Processing Queue**
    - Implement job queue (Bull/BullMQ) for async processing
    - Handle multiple concurrent uploads
    - Better error recovery
 
-4. **Progressive Web App (PWA)**
+3. **Progressive Web App (PWA)**
    - Add service worker for offline support
    - Install prompt for mobile users
    - Cache processed images locally
 
 ### Medium Priority
-5. **Advanced Features**
+4. **Advanced Features**
    - Batch upload processing
    - Image format conversion (PNG → JPG, etc.)
    - Custom enhancement presets (sharpen, denoise, etc.)
    - Image cropping before upscaling
 
-6. **Performance Optimizations**
+5. **Performance Optimizations**
    - Implement lazy loading for history images
    - Add image compression before upload
    - WebP format support for better compression
    - CDN caching strategies
 
-7. **Social Features**
+6. **Social Features**
    - Public gallery of upscaled images
    - Share results on social media
    - Before/after comparison embeds
 
 ### Nice to Have
-8. **Admin Dashboard**
+7. **Admin Dashboard**
    - Usage statistics and analytics
    - User management
    - API usage monitoring
    - Error tracking (Sentry integration)
 
-9. **Testing**
+8. **Testing**
    - Unit tests for critical functions
    - Integration tests for API endpoints
    - E2E tests with Playwright/Cypress
    - Visual regression testing
 
-10. **Enhanced UX**
+9. **Enhanced UX**
     - Keyboard shortcuts
     - Drag-to-reorder history items
     - Comparison mode (side-by-side multiple images)
