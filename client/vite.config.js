@@ -5,6 +5,7 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   server: {
-    allowedHosts: ["https://aiupscaler-1.onrender.com"]
+    host: "0.0.0.0",
+    allowedHosts: ["aiupscaler-1.onrender.com"]
   }
 })
