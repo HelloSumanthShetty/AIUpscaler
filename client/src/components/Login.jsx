@@ -1,11 +1,10 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { CONFIG } from '../config';
 
 const Login = () => {
-    const API_URL = 'http://localhost:3002'; // Server port
-
     const handleGoogleLogin = () => {
-        window.location.href = `${API_URL}/auth/google`;
+        window.location.href = `${CONFIG.API_URL}/auth/google`;
     };
 
     return (

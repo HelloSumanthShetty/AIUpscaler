@@ -66,8 +66,6 @@ export const AuthProvider = ({ children }) => {
     const [usage, setUsage] = useState(null);
     const [loading, setLoading] = useState(true);
 
-    const API_URL = 'http://localhost:3002'; // Server port
-
     // Fetch user on mount & initialize usage
     useEffect(() => {
         fetchUser();
@@ -75,7 +73,7 @@ export const AuthProvider = ({ children }) => {
 
     const fetchUser = async () => {
         try {
-            const response = await fetch(`${API_URL}/auth/user`, {
+            const response = await fetch(`${CONFIG.API_URL}/auth/user`, {
                 credentials: 'include' // Include cookies
             });
 
@@ -100,7 +98,7 @@ export const AuthProvider = ({ children }) => {
 
     const logout = async () => {
         try {
-            await fetch(`${API_URL}/auth/logout`, {
+            await fetch(`${CONFIG.API_URL}/auth/logout`, {
                 credentials: 'include'
             });
             setUser(null);
