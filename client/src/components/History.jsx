@@ -102,7 +102,13 @@ const History = () => {
                                 style={{ cursor: 'pointer' }}
                                 title="Click to view full image"
                             >
-                                <img src={item.enhancedUrl} alt="Enhanced" className="history-image" />
+                                <img
+                                    src={item.enhancedUrl}
+                                    alt="Enhanced"
+                                    className="history-image"
+                                    loading="lazy"
+                                    decoding="async"
+                                />
                                 <div className="history-badge">{item.scale}x</div>
                             </div>
 
