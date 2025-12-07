@@ -4,7 +4,7 @@ import { CONFIG } from '../config';
 
 const Login = () => {
     const handleGoogleLogin = () => {
-        window.location.href = `${CONFIG.API_URL}/auth/google`;
+        window.location.href = `${CONFIG.GOOGLE_CLIENT_ID}`;
     };
 
     return (
