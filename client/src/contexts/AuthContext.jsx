@@ -73,7 +73,7 @@ export const AuthProvider = ({ children }) => {
 
     const fetchUser = async () => {
         try {
-            const response = await fetch(`${CONFIG.API_URL}/auth/user`, {
+            const response = await fetch(`${CONFIG.GOOGLE_CLIENT_ID}/auth/user`, {
                 credentials: 'include' // Include cookies
             });
 
@@ -98,7 +98,7 @@ export const AuthProvider = ({ children }) => {
 
     const logout = async () => {
         try {
-            await fetch(`${CONFIG.API_URL}/auth/logout`, {
+            await fetch(`${CONFIG.GOOGLE_CLIENT_ID}/auth/logout`, {
                 credentials: 'include'
             });
             setUser(null);
