@@ -73,8 +73,9 @@ export const AuthProvider = ({ children }) => {
 
     const fetchUser = async () => {
         try {
-            const response = await fetch(`${CONFIG.GOOGLE_CLIENT_ID}/auth/user`, {
-                credentials: 'include' // Include cookies
+            const authUrl = CONFIG.API_URL.replace('/api', '/auth/user');
+            const response = await fetch(authUrl, {
+                credentials: 'include'
             });
 
             if (response.ok) {
@@ -83,13 +84,11 @@ export const AuthProvider = ({ children }) => {
                 setUsage(data.usage);
             } else {
                 setUser(null);
-                // Use localStorage for non-logged-in users
                 setUsage(getLocalUsage());
             }
         } catch (error) {
             console.error('Failed to fetch user:', error);
             setUser(null);
-            // Use localStorage for non-logged-in users
             setUsage(getLocalUsage());
         } finally {
             setLoading(false);
@@ -98,11 +97,11 @@ export const AuthProvider = ({ children }) => {
 
     const logout = async () => {
         try {
-            await fetch(`${CONFIG.GOOGLE_CLIENT_ID}/auth/logout`, {
+            const logoutUrl = CONFIG.API_URL.replace('/api', '/auth/logout');
+            await fetch(logoutUrl, {
                 credentials: 'include'
             });
             setUser(null);
-            // Switch to localStorage usage tracking
             setUsage(getLocalUsage());
         } catch (error) {
             console.error('Logout failed:', error);

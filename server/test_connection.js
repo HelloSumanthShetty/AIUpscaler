@@ -14,7 +14,7 @@ async function testServer() {
         console.log(`GET /api/download status: ${responseDownload.status}`);
 
     } catch (error) {
-        console.error("❌ Failed to connect to server:", error.message);
+        console.error("Failed to connect to server:", error.message);
     }
 }
 
