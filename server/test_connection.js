@@ -4,13 +4,13 @@ async function testServer() {
         console.log("Testing connection to server...");
 
         // Test Upscale Endpoint (POST)
-        const responseUpscale = await fetch('http://localhost:3002/api/upscale', {
+        const responseUpscale = await fetch('https://aiupscaler.onrender.com/api/upscale', {
             method: 'POST'
         });
         console.log(`POST /api/upscale status: ${responseUpscale.status}`);
 
         // Test Download Endpoint (GET)
-        const responseDownload = await fetch('http://localhost:3002/api/download');
+        const responseDownload = await fetch('https://aiupscaler.onrender.com/api/download');
         console.log(`GET /api/download status: ${responseDownload.status}`);
 
     } catch (error) {

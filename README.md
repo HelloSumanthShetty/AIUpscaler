@@ -171,7 +171,7 @@ SESSION_SECRET=your_super_secret_session_key_here
 #### Client Environment Variables (Optional)
 Create `client/.env` file if needed:
 ```env
-VITE_API_URL=http://localhost:3002/api
+RENDER_API_URL= YOUR RENDER API URL
 ```
 
 ### 4. Google OAuth Setup
@@ -323,34 +323,34 @@ npm run dev
 
 ##  Time Spent
 
-**Total Time**: ~8-10 hours
+**Total Time**: ~17 ~ 20 hours
 
 **Breakdown**:
-- **Initial Setup & Architecture** (1.5 hours)
+- **Initial Setup & Architecture** (3 hours)
   - Project scaffolding with Vite
   - Backend Express setup
   - Database schema design
   
-- **Core Features Implementation** (4 hours)
+- **Core Features Implementation** (8 hours)
   - File upload with drag-and-drop
   - Cloudinary integration
   - Before/after comparison slider
   - Settings panel with scale options
   - Download functionality
 
-- **Authentication & User Management** (1.5 hours)
+- **Authentication & User Management** (2 hours)
   - Google OAuth integration
   - Session management
   - Usage tracking (server + localStorage)
 
-- **UI/UX Polish** (2 hours)
+- **UI/UX Polish** (4 hours)
   - Glassmorphism design system
   - Framer Motion animations
   - Toast notifications
   - Error states and loading indicators
   - Responsive design
 
-- **Bug Fixes & Refinements** (1 hour)
+- **Bug Fixes & Refinements** (2 hours)
   - Image persistence issues
   - User-specific history
   - Error handling improvements
