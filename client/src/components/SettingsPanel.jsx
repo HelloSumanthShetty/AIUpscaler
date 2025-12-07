@@ -321,7 +321,7 @@ const SettingsPanel = ({
                         }}
                     >
                         <Download size={20} />
-                        <span>💾 Download Enhanced</span>
+                        <span>Download Enhanced</span>
                     </motion.button>
                 )}
             </div>

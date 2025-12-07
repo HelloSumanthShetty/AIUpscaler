@@ -52,7 +52,7 @@ const History = () => {
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
                         onClick={() => {
-                            if (confirm('🗑️ Clear all history? This cannot be undone.')) {
+                            if (confirm('Clear all history? This cannot be undone.')) {
                                 clearHistory();
                             }
                         }}

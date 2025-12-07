@@ -122,7 +122,7 @@ const HeroShowcase = () => {
                                         exit={{ opacity: 0, y: 10 }}
                                         className="text-gradient"
                                     >
-                                        ✨ AI Enhanced
+                                        AI Enhanced
                                     </motion.span>
                                 ) : (
                                     <motion.span

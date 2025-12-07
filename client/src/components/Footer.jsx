@@ -7,25 +7,25 @@ const Footer = () => {
         {
             name: 'GitHub',
             icon: Github,
-            url: 'https://github.com/HelloSumanthShetty', // Replace with your GitHub
+            url: 'https://github.com/HelloSumanthShetty',
             color: '#333'
         },
         {
             name: 'LinkedIn',
             icon: Linkedin,
-            url: 'https://www.linkedin.com/in/sumanth-shetty-dev/', // Replace with your LinkedIn
+            url: 'https://www.linkedin.com/in/sumanth-shetty-dev/',
             color: '#0077b5'
         },
         {
             name: 'Twitter/X',
             icon: Twitter,
-            url: 'https://x.com/sumShetty_dev', // Replace with your Twitter
+            url: 'https://x.com/sumShetty_dev',
             color: '#1DA1F2'
         },
         {
             name: 'LeetCode',
             icon: Code2,
-            url: 'https://leetcode.com/u/SumanthShetty7/', // Replace with your LeetCode
+            url: 'https://leetcode.com/u/SumanthShetty7/',
             color: '#FFA116'
         }
     ];
@@ -49,7 +49,6 @@ const Footer = () => {
                         margin: '0 auto'
                     }}
                 >
-                    {/* About Me Section */}
                     <div style={{ marginBottom: '2rem' }}>
                         <h3 style={{
                             fontSize: '1.5rem',
@@ -73,7 +72,6 @@ const Footer = () => {
                         </p>
                     </div>
 
-                    {/* Social Links */}
                     <div style={{
                         display: 'flex',
                         justifyContent: 'center',
@@ -133,7 +131,6 @@ const Footer = () => {
                         })}
                     </div>
 
-                    {/* Copyright */}
                     <div style={{
                         paddingTop: '2rem',
                         borderTop: '1px solid rgba(255,255,255,0.05)'

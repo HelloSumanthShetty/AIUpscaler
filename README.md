@@ -2,7 +2,7 @@
 
 A modern, full-stack web application that leverages AI-powered image enhancement to upscale images by 2x, 3x, or 4x while preserving quality. Built with a focus on user experience, performance, and scalability.
 
-## 🎯 Project Approach
+##  Project Approach
 
 ### Architecture Overview
 The application follows a **client-server architecture** with clear separation of concerns:
@@ -66,7 +66,7 @@ Upload → Validate → Preview → Select Scale → Process (AI) → Compare �
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 ### Frontend
 | Technology | Purpose | Why Chosen |
@@ -111,10 +111,10 @@ Upload → Validate → Preview → Select Scale → Process (AI) → Compare �
 
 ---
 
-## 🚀 Setup Instructions
+##  Setup Instructions
 
 ### Prerequisites
-- **Node.js** (v16 or higher) - [Download](https://nodejs.org/)
+- **Node.js** (v20 or higher) - [Download](https://nodejs.org/)
 - **Cloudinary Account** - [Sign up free](https://cloudinary.com/)
 - **Google Cloud Console** - For OAuth credentials
 
@@ -245,7 +245,7 @@ npm run dev
 
 ---
 
-## 💡 Challenges & Solutions
+##  Challenges & Solutions
 
 ### 1. **Image URL Persistence Across Sessions**
 **Challenge**: Initially used blob URLs for preview images, which became invalid after page refresh, causing history images to fail loading.
@@ -321,7 +321,7 @@ npm run dev
 
 ---
 
-## ⏱️ Time Spent
+##  Time Spent
 
 **Total Time**: ~8-10 hours
 
@@ -358,7 +358,7 @@ npm run dev
 
 ---
 
-## 🚀 Future Improvements
+##  Future Improvements
 
 ### High Priority
 1. **TypeScript Migration**
@@ -420,13 +420,13 @@ npm run dev
 
 ---
 
-## 📝 License
+## License
 
 MIT License - feel free to use this project for learning and development.
 
 ---
 
-## 👨‍💻 Author
+## Author
 
 **Sumanth Shetty**
 - GitHub: [@HelloSumanthShetty](https://github.com/HelloSumanthShetty)
